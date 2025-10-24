@@ -4,6 +4,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import chevronDown from "../../../public/svgs/Chevron down.svg";
+import Link from "next/link";
 
 export default function FAQ() {
   const [openIndex, setOpenIndex] = useState(null);
@@ -121,9 +122,13 @@ export default function FAQ() {
               Our support team isn ready to help you 24/7
             </p>
           </div>
-          <button className="bg-[#CCFF02] px-6 py-[18px] rounded-[62px] text-[#000000] md:text-[24px] text-[12.8px] leading-[100%] cursor-pointer">
-            Contact Support
-          </button>
+          <Link
+            href={"https://x.com/blinkqsupport?s=21&t=KM_zUjkOaj5ek0gFCPxFGA"}
+          >
+            <button className="bg-[#CCFF02] px-6 py-[18px] rounded-[62px] text-[#000000] md:text-[24px] text-[12.8px] leading-[100%] cursor-pointer">
+              Contact Support
+            </button>
+          </Link>
         </div>
 
         <div className="p-20 w-full bg-[#212121] text-[#F5F5F5] rounded-[80px] md:flex items-center flex-col text-center gap-6 mt-[164px] max-w-[1075px] mx-auto hidden">

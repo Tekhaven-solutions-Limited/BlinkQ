@@ -71,21 +71,28 @@ function Footer({
               Follow Us
             </h1>
             <div className="flex justify-center md:justify-start gap-4">
-              <Image
-                src={X}
-                alt="X (Twitter)"
-                className="cursor-pointer hover:opacity-80 transition"
-              />
-              <Image
-                src={instagram}
-                alt="Instagram"
-                className="cursor-pointer hover:opacity-80 transition"
-              />
-              <Image
-                src={linkedin}
-                alt="LinkedIn"
-                className="cursor-pointer hover:opacity-80 transition"
-              />
+              <Link
+                href={
+                  "https://x.com/blinkqsupport?s=21&t=KM_zUjkOaj5ek0gFCPxFGA"
+                }
+              >
+                <Image
+                  src={X}
+                  alt="X (Twitter)"
+                  className="cursor-pointer hover:opacity-80 transition"
+                />
+              </Link>
+              <Link
+                href={
+                  "https://www.instagram.com/blinkq.chat?igsh=ODNlOW53MDcycG5n&utm_source=qr"
+                }
+              >
+                <Image
+                  src={instagram}
+                  alt="Instagram"
+                  className="cursor-pointer hover:opacity-80 transition"
+                />
+              </Link>
             </div>
           </div>
         </div>

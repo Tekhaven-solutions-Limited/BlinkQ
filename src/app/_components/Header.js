@@ -95,10 +95,11 @@ export default function Header({ onOpenModal }) {
               Block Account
             </span>
           </button>
-
-          <button className="px-6 py-2.5 bg-[#212121] rounded-full text-white text-[12px] leading-[20px] font-medium hover:bg-[#333] transition cursor-pointer">
-            Start on WhatsApp Now
-          </button>
+          <Link href={"https://wa.me/message/OI6ICEYF6SMNE1"}>
+            <button className="px-6 py-2.5 bg-[#212121] rounded-full text-white text-[12px] leading-[20px] font-medium hover:bg-[#333] transition cursor-pointer">
+              Start on WhatsApp Now
+            </button>
+          </Link>
         </div>
 
         {/* Mobile Hamburger Button */}

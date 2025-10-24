@@ -4,6 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import phoneMockup from "../../../public/images/Frame 2147226417.png"; // your WhatsApp phone image
 import arrowHero from "../../../public/svgs/arrowHero.svg"; // your WhatsApp phone image
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -36,17 +37,19 @@ export default function Hero() {
             <Image
               src={arrowHero}
               alt="arrow Icon"
-              className="absolute md:top-[20%] top-[35%] md:left-[53%] left-[70%] -translate-x-1/2  rotate-90 md:rotate-0 block md:hidden"
+              className="absolute md:top-[20%] top-[35%] md:left-[53%] left-[80%] -translate-x-1/2  rotate-90 md:rotate-0 block md:hidden"
               priority
             />
 
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              transition={{ type: "spring", stiffness: 200 }}
-              className="inline-flex items-center gap-2 bg-[#171717] text-white md:px-14 px-[30px] md:py-4 py-[8.44px] rounded-full md:text-[12px] md:leading-[20px] leading-[10.55px] text-[6.33px] font-medium shadow-md hover:bg-[#333] transition"
-            >
-              👉🏽 Start on WhatsApp Now
-            </motion.button>
+            <Link href={"https://wa.me/message/OI6ICEYF6SMNE1"} passHref>
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                transition={{ type: "spring", stiffness: 200 }}
+                className="inline-flex items-center gap-2 bg-[#171717] text-white px-10 md:px-14  py-4  rounded-full text-[12px] leading-[20px] font-medium shadow-md hover:bg-[#333] transition"
+              >
+                👉🏽 Start on WhatsApp Now
+              </motion.button>
+            </Link>
           </div>
         </motion.div>
 
@@ -64,7 +67,6 @@ export default function Hero() {
             priority
           />
         </motion.div>
-
         <Image
           src={arrowHero}
           alt="arrow Icon"

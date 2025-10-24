@@ -6,6 +6,7 @@ import diamond from "../../../public/svgs/image 311.svg";
 import moon from "../../../public/svgs/image 312.svg";
 import star from "../../../public/svgs/image 313.svg";
 import Image from "next/image";
+import Link from "next/link";
 
 const features = [
   {
@@ -110,13 +111,15 @@ export default function WhyBlinkQ() {
       </div>
 
       {/* CTA Button */}
-      <motion.button
-        whileHover={{ scale: 1.05 }}
-        whileTap={{ scale: 0.95 }}
-        className=" bg-[#CCFF02] text-black font-medium px-14 py-5 rounded-full z-10 cursor-pointer md:text-[16px] md:leading-5 text-[11.11px] leading-[13.89px]"
-      >
-        Send Money on WhatsApp Now
-      </motion.button>
+      <Link href="https://wa.me/message/OI6ICEYF6SMNE1" passHref>
+        <motion.a
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          className="bg-[#CCFF02] text-black font-medium px-14 py-5 rounded-full z-10 cursor-pointer md:text-[16px] md:leading-5 text-[11.11px] leading-[13.89px] inline-block"
+        >
+          Send Money on WhatsApp Now
+        </motion.a>
+      </Link>
     </section>
   );
 }
