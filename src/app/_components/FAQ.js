@@ -119,7 +119,7 @@ export default function FAQ() {
               Still have questions?
             </h1>
             <p className="md:text-[24px] text-[12.8px] leading-[100%]">
-              Our support team isn ready to help you 24/7
+              Our support team is ready to help you 24/7
             </p>
           </div>
           <Link

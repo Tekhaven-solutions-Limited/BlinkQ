@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import phoneMockup from "../../../public/images/Frame 2147226417.png"; // your WhatsApp phone image
 import arrowHero from "../../../public/svgs/arrowHero.svg"; // your WhatsApp phone image
 import Link from "next/link";
+import { FaWhatsapp } from "react-icons/fa";
 
 export default function Hero() {
   return (
@@ -47,7 +48,7 @@ export default function Hero() {
                 transition={{ type: "spring", stiffness: 200 }}
                 className="inline-flex items-center gap-2 bg-[#171717] text-white px-10 md:px-14  py-4  rounded-full text-[12px] leading-[20px] font-medium shadow-md hover:bg-[#333] transition"
               >
-                👉🏽 Start on WhatsApp Now
+                <FaWhatsapp className="text-[18px]" /> Start on WhatsApp Now
               </motion.button>
             </Link>
           </div>

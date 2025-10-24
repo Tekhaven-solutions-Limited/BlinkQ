@@ -72,9 +72,7 @@ function Footer({
             </h1>
             <div className="flex justify-center md:justify-start gap-4">
               <Link
-                href={
-                  "https://x.com/blinkqsupport?s=21&t=KM_zUjkOaj5ek0gFCPxFGA"
-                }
+                href={"https://x.com/blinkq_?s=21&t=KM_zUjkOaj5ek0gFCPxFGA"}
               >
                 <Image
                   src={X}
@@ -99,7 +97,7 @@ function Footer({
 
         {/* Bottom Section */}
         <div className="border-t border-[#BCBCBC] pt-6 text-center text-[14px] md:text-[16px] text-[#424242]">
-          © {currentYear} BlinkQ AI. All rights reserved.
+          © {currentYear} Takhaven Solutions Limited. All rights reserved.
         </div>
       </div>
     </footer>
