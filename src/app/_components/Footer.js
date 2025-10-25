@@ -36,9 +36,6 @@ function Footer({
               Quick Links
             </h1>
             <ul className="flex flex-col gap-4 md:gap-6 text-[#212121] text-[16px]">
-              <li className="hover:text-[#000000] cursor-pointer transition">
-                About
-              </li>
               <li
                 className="hover:text-[#000000] cursor-pointer transition"
                 onClick={onOpenModalPrivacyPolicy}
