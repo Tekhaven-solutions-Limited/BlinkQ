@@ -61,12 +61,16 @@ export default function Hero() {
           transition={{ delay: 0.3, duration: 0.8 }}
           className="mt-10 md:mt-0 w-full flex justify-center"
         >
-          <Image
-            src={phoneMockup}
-            alt="BlinkQ WhatsApp transfer mockup"
-            // className="w-[280px] md:w-[360px] lg:w-[604px] drop-shadow-2xl"
-            priority
+          {/* <div className="relative rounded-[2rem] overflow-hidden shadow-2xl border border-gray-200"> */}
+          <video
+            src="/videos/blinkq-demo.mp4" // 👉 replace with your actual video path
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="mr-5 md:mr-0"
           />
+          {/* </div> */}
         </motion.div>
         <Image
           src={arrowHero}
