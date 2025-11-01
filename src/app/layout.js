@@ -65,6 +65,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/logo.svg" sizes="any" />
+      </head>
       <body className={`${unbounded.variable} antialiased`}>
         <ClientLayout>{children}</ClientLayout>
       </body>
