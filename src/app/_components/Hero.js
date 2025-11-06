@@ -4,6 +4,8 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import phoneMockup from "../../../public/images/Frame 2147226417.png"; // your WhatsApp phone image
 import arrowHero from "../../../public/svgs/arrowHero.svg"; // your WhatsApp phone image
+import hero from "../../../public/images/hero.png";
+import curvedLine from "../../../public/images/curved-line.svg";
 import Link from "next/link";
 import { FaWhatsapp } from "react-icons/fa";
 
@@ -23,12 +25,20 @@ export default function Hero() {
           className="max-w-[758px] text-left space-y-20 self-center  md:mt-0"
         >
           <div className="md:space-y-8 space-y-4">
-            <h1 className="font-unbounded md:text-[32px] text-[16.89px] md:leading-[56px] leading-[29.55px] text-[#171717] font-medium pr-10">
+            <h1 className="font-unbounded text-[32px]/[46px] md:leading-[56px] text-[#212121] font-medium pr-10">
               No network wahala. Your Money moves swiftly in WhatsApp with{" "}
-              <span className="text-[#171717]">BlinkQ</span>
+              <span className="relative inline-block text-[#171717]">
+                BlinkQ
+                <Image
+                  src={curvedLine}
+                  alt="curved line"
+                  className="absolute -bottom-2 left-0 w-full"
+                  priority
+                />
+              </span>
             </h1>
 
-            <p className="text-[#757575] text-[9.5px] md:text-[18px] leading-[100%]">
+            <p className="text-[#757575] text-[12px]/[normal] md:text-[18px]/[normal] leading-[100%]">
               Tired of failed transfers, hidden charges, and endless ‘system
               down’ excuses? With BlinkQ Ai, you can send money and buy airtime
               instantly inside WhatsApp.
@@ -48,7 +58,7 @@ export default function Hero() {
                 transition={{ type: "spring", stiffness: 200 }}
                 className="inline-flex items-center gap-2 bg-[#171717] text-white px-10 md:px-14  py-4  rounded-full text-[12px] leading-[20px] font-medium shadow-md hover:bg-[#333] transition"
               >
-                <FaWhatsapp className="text-[18px]" /> Start on WhatsApp Now
+                👉🏽 Start on WhatsApp Now
               </motion.button>
             </Link>
           </div>
@@ -62,14 +72,7 @@ export default function Hero() {
           className="mt-10 md:mt-0 w-full flex justify-center"
         >
           {/* <div className="relative rounded-[2rem] overflow-hidden shadow-2xl border border-gray-200"> */}
-          <video
-            src="/videos/blinkq-demo.mp4" // 👉 replace with your actual video path
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="mr-5 md:mr-0"
-          />
+          <Image src={hero} alt="hero" className="mr-5 md:mr-0" />
           {/* </div> */}
         </motion.div>
         <Image
