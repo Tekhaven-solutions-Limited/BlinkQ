@@ -15,7 +15,7 @@ export default function Hero() {
       {/* Content Wrapper */}
       <div
         className="relative max-w-[1440px] mx-auto flex flex-col md:flex-row items-center  gap-[78px]
-        w-full pl-6 md:pl-[45px] mt-24"
+        w-full px-6 md:pl-[45px] mt-24"
       >
         {/* Left Section */}
         <motion.div
@@ -25,7 +25,7 @@ export default function Hero() {
           className="max-w-[758px] text-left space-y-20 self-center  md:mt-0"
         >
           <div className="md:space-y-8 space-y-4">
-            <h1 className="font-unbounded text-[32px]/[46px] md:leading-[56px] text-[#212121] font-medium pr-10">
+            <h1 className="font-unbounded text-[32px]/[46px] md:leading-[56px] text-[#212121] font-medium">
               No network wahala. Your Money moves swiftly in WhatsApp with{" "}
               <span className="relative inline-block text-[#171717]">
                 BlinkQ
@@ -38,17 +38,17 @@ export default function Hero() {
               </span>
             </h1>
 
-            <p className="text-[#757575] text-[12px]/[normal] md:text-[18px]/[normal] leading-[100%]">
+            <p className="text-[#757575] pt-4 text-[12px]/[normal] md:text-[18px]/[normal]">
               Tired of failed transfers, hidden charges, and endless ‘system
               down’ excuses? With BlinkQ Ai, you can send money and buy airtime
               instantly inside WhatsApp.
             </p>
           </div>
-          <div className="relative">
+          <div className="relative flex justify-center">
             <Image
               src={arrowHero}
               alt="arrow Icon"
-              className="absolute md:top-[20%] top-[35%] md:left-[53%] left-[80%] -translate-x-1/2  rotate-90 md:rotate-0 block md:hidden"
+              className="absolute md:top-[20%] hidden md:block top-[35%] md:left-[53%] left-[80%] -translate-x-1/2  rotate-90 md:rotate-0 block md:hidden"
               priority
             />
 
@@ -72,7 +72,14 @@ export default function Hero() {
           className="mt-10 md:mt-0 w-full flex justify-center"
         >
           {/* <div className="relative rounded-[2rem] overflow-hidden shadow-2xl border border-gray-200"> */}
-          <Image src={hero} alt="hero" className="mr-5 md:mr-0" />
+          <video
+            src="/videos/blinkq-demo.mp4" // 👉 replace with your actual video path
+            autoPlay
+            loop
+            muted
+            playsInline
+            className=" md:mr-0"
+          />
           {/* </div> */}
         </motion.div>
         <Image
