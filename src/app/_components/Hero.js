@@ -52,7 +52,7 @@ export default function Hero() {
               priority
             />
 
-            <Link href={"https://wa.me/message/OI6ICEYF6SMNE1"} passHref>
+            <Link href={"https://wa.me/message/BBY4G4PXGRQID1"} passHref>
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 transition={{ type: "spring", stiffness: 200 }}

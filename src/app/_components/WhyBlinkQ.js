@@ -111,7 +111,7 @@ export default function WhyBlinkQ() {
       </div>
 
       {/* CTA Button */}
-      <Link href="https://wa.me/message/OI6ICEYF6SMNE1" passHref>
+      <Link href="https://wa.me/message/BBY4G4PXGRQID1" passHref>
         <motion.a
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
