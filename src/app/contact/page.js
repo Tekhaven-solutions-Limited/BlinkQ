@@ -30,8 +30,8 @@ export default function ContactPage() {
             Contact Us
           </h1>
           <p className="text-[14px] md:text-[18px] text-[#616161] max-w-xl mx-auto leading-relaxed">
-            Have a question or need support? We'd love to hear from you. Send us
-            a message and we'll get back to you as soon as possible.
+            Have a question or need support? We&apos;d love to hear from you. Send us
+            a message and we&apos;ll get back to you as soon as possible.
           </p>
         </motion.div>
 
@@ -86,7 +86,7 @@ export default function ContactPage() {
                       Support Hours
                     </p>
                     <p className="text-[14px] text-[#212121] font-medium">
-                      24/7 – We're always here
+                      24/7 – We&apos;re always here
                     </p>
                   </div>
                 </div>
@@ -115,7 +115,7 @@ export default function ContactPage() {
                   Message Sent!
                 </h2>
                 <p className="text-[14px] md:text-[16px] text-[#616161] max-w-sm">
-                  Thank you for reaching out. We'll get back to you as soon as
+                  Thank you for reaching out. We&apos;ll get back to you as soon as
                   possible.
                 </p>
                 <button
