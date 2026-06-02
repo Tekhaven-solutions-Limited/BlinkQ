@@ -77,7 +77,7 @@ export default function Header({ onOpenModal }) {
           {/* <li className="cursor-pointer hover:underline list-none">
             Coming Soon
           </li> */}
-          <Link href={"#contact"}>
+          <Link href={"/contact"}>
             <li className="cursor-pointer hover:underline list-none">
               Contact
             </li>
@@ -137,7 +137,7 @@ export default function Header({ onOpenModal }) {
                 <li className="cursor-pointer hover:underline">Why BlinkQ</li>
               </Link>
 
-              <Link href={"#contact"}>
+              <Link href={"/contact"}>
                 <li className="cursor-pointer hover:underline">Contact</li>
               </Link>
 

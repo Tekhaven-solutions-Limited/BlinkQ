@@ -48,7 +48,7 @@ function Footer({
               >
                 Terms of Use
               </li>
-              <Link href={"#contact"}>
+              <Link href={"/contact"}>
                 <li className="hover:text-[#000000] cursor-pointer transition">
                   Contact
                 </li>

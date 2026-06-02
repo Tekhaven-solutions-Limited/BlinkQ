@@ -9,6 +9,7 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@heroui/accordion": "^2.2.24",
     "@szhsin/react-accordion": "^1.4.1",
     "formik": "^2.4.6",
